@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "stepasidelil-toolbox",
   "private": true,
   "scripts": {
     "build": "turbo build",
