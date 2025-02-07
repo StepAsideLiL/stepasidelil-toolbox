@@ -18,7 +18,7 @@
   "scripts": {
     "build": "ncc build ./src/index.ts -o dist/",
     "dev": "ncc build ./src/index.ts -w -o dist/",
-    "publish": "ncc build ./src/index.ts -o dist/ && npm publish --access public"
+    "pub": "ncc build ./src/index.ts -o dist/ && npm publish --access public"
   },
   "license": "MIT",
   "packageManager": "pnpm@9.0.0",
