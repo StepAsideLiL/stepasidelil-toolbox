@@ -1,0 +1,38 @@
+{
+  "name": "@stepasidelil/create-app",
+  "version": "0.0.1",
+  "description": "Create a Nextjs app with some default configuration.",
+  "author": "",
+  "bin": {
+    "@stepasidelil/create-app": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "create",
+    "app"
+  ],
+  "scripts": {
+    "build": "ncc build ./src/index.ts -o dist/",
+    "dev": "ncc build ./src/index.ts -w -o dist/",
+    "publish": "ncc build ./src/index.ts -o dist/ && npm publish --access public"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@vercel/ncc": "^0.38.3",
+    "commander": "^13.1.0",
+    "cross-spawn": "^7.0.6",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.0",
+    "prompts": "^2.4.2",
+    "typescript": "5.7.3"
+  }
+}
